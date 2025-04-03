@@ -36,7 +36,6 @@ Position load_maze(const std::string& file_name) {
     }
 
     // 2. Leia o número de linhas e colunas do labirinto
-    std::cout<< "aquii";
 	file >> num_rows >> num_cols;
     std::cout << "Labirinto " << num_rows << "x" << num_cols << ":\n";
 
@@ -182,7 +181,7 @@ int main() {
     std::cout << "Iniciando o teste com o labirinto...\n";
 
     // Caminho fixo para o arquivo maze2.txt
-    std::string file_name = "data/maze2.txt";
+    std::string file_name = "../data/maze.txt";
     
     // Carregar o labirinto diretamente do arquivo
     Position initial_pos = load_maze(file_name);
